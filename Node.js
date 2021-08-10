@@ -1,3 +1,2 @@
-const greet = () =>{
-    console.log("hello world");
-}
+//Global Object :
+
