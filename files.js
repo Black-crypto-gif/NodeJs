@@ -43,3 +43,10 @@ const  fs = require('fs');
         console.log('File deleted');
     })
 } */
+
+/* fs.writeFile('./stream.js', ('d'), (err) =>{
+    if (err) {
+        console.log(err);
+    }
+    console.log("file created");
+}) */
