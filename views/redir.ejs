@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection</title>
+</head>
+
+<body>
+    <center>
+        <script>
+            setTimeout(function () {
+                window.location.href = 'https://scienceboard.xyz/mellalFethi/';
+            }, 10000);
+        </script>
+        <script>
+            var timeleft = 10;
+            var downloadTimer = setInterval(function () {
+                if (timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+                }
+                timeleft -= 1;
+            }, 1000);
+        </script>
+        <p>Web page redirects after<div style="font-weight:bolder;" id="countdown"></div>.</p>
+    </center>
+
+</body>
+
+</html>
