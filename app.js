@@ -14,6 +14,23 @@ app.set('view engine', 'ejs');
 
 app.listen(3000);
 
+// middleware & static files:
+
+app.use(express.static('public'));
+app.use(morgan('dev'));
+
+/* app.use((req, res, next) =>{
+  console.log('New request made :');
+  console.log('host:', req.hostname);
+  console.log('path:', req.path);
+  console.log('method:', req.method);
+  next();
+
+});
+ */
+
+
+
 app.get('/', (req, res) => {
     
     res.render('index', {
@@ -144,20 +161,20 @@ app.get('/about', (req, res) => {
 ];
     res.render('about', { title: 'about', users});
 });
-app.get('/redir', (req, res) => {
-    res.render('redir');
+app.get('/Sign-in', (req, res) => {
+    res.render('Sign-in', {title :'sign-in'});
 });
-app.get('/card', (req, res) => {
-    res.render('card');
+app.get('/login', (req, res) => {
+    res.render('login',{title :'sign-in'});
 });
 
 // redirect
-app.get('/about-us', (req, res) => {
-    res.render('about');
+app.get('/carousel', (req, res) => {
+    res.render('carousel',{title :'carousel'});
 })
 
 // 404 
 
 app.use((req, res) => {
-    res.status(404).render('404');
+    res.status(404).render('404', {title:'404'});
 })
