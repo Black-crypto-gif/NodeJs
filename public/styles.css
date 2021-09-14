@@ -1,6 +1,32 @@
 body{
-    background-color: rgb(55, 55, 238);
+    background-color: rgba(21, 180, 16, 0.856);
 }
 .accordion{
     margin-top: 7%;
+}
+
+.py-4{
+    width: 25%;
+    margin-top: 5%;
+    text-align: center;
+}
+h4{
+    margin: 5%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 1%;
+    box-shadow: 5px 7px 24px 2px #000000;
+}
+#contactForm{
+    color: bisque;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(6, 95, 51);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 5px 7px 24px 2px #000000;
+}
+.cont5{
+    margin-top: 2.5%;
 }
